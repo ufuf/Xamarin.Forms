@@ -16,8 +16,13 @@ namespace XamarinForms
 			secondPage.Title = "İkinci Sayfa";
 			secondPage.Icon = "visitCalendar.png";
 
+			//Liste sayfası
+			var listPage = new NavigationPage(new MyListViewPage ());
+			listPage.Title = "Liste";
+
 			Children.Add (firstPage);
 			Children.Add (secondPage);
+			Children.Add (listPage); //Tab ekle
 		}
 	}
 }
