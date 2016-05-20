@@ -9,7 +9,7 @@ namespace XamarinForms
 		public App ()
 		{
 			// The root page of your application
-			MainPage = new NavigationPage(new MyFirstPage());
+			MainPage = new MyTabbedPage();
 		}
 
 		protected override void OnStart ()
