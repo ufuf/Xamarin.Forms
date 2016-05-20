@@ -8,23 +8,8 @@ namespace XamarinForms
 	{
 		public App ()
 		{
-			Label testLabel = new Label ();
-			testLabel.Text = "Merhaba";
-
-			Button testButton = new Button ();
-			testButton.Text = "Deneme Butonu";
-			testButton.Clicked += (object sender, EventArgs e) => testLabel.Text = "Botuna Basıldı";
-
 			// The root page of your application
-			MainPage = new ContentPage {
-				Content = new StackLayout {
-					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						testLabel,
-						testButton
-					}
-				}
-			};
+			MainPage = new NavigationPage(new MyFirstPage());
 		}
 
 		protected override void OnStart ()
